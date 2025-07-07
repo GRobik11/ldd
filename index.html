@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversion Tools</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Conversion Tools</h1>
+    
+    <div class="converter-section">
+      <h2>Decimal to Binary Converter</h2>
+      <div class="input-container">
+        <label for="number-input">Enter a decimal number:</label>
+        <input
+          value=""
+          type="number"
+          name="decimal number input"
+          id="number-input"
+          class="number-input"
+        />
+        <button class="convert-btn" id="convert-btn">Convert</button>
+      </div>
+      <output id="result" for="number-input"></output>
+      <div id="animation-container"></div>
+    </div>
+
+    <div class="converter-section">
+      <h2>Unit Converter</h2>
+      <div class="input-container">
+        <label for="unit-value">Enter value:</label>
+        <input
+          value=""
+          type="number"
+          name="unit value"
+          id="unit-value"
+          class="number-input"
+        />
+        <select id="from-unit">
+          <option value="meters">Meters</option>
+          <option value="centimeters">Centimeters</option>
+          <option value="kilometers">Kilometers</option>
+          <option value="inches">Inches</option>
+          <option value="feet">Feet</option>
+          <option value="yards">Yards</option>
+          <option value="miles">Miles</option>
+        </select>
+        <span>to</span>
+        <select id="to-unit">
+          <option value="inches">Inches</option>
+          <option value="feet">Feet</option>
+          <option value="yards">Yards</option>
+          <option value="miles">Miles</option>
+          <option value="meters">Meters</option>
+          <option value="centimeters">Centimeters</option>
+          <option value="kilometers">Kilometers</option>
+        </select>
+        <button class="convert-btn" id="unit-convert-btn">Convert</button>
+      </div>
+      <output id="unit-result"></output>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
